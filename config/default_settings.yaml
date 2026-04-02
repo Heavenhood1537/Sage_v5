@@ -1,0 +1,43 @@
+# Sage v5 default settings template
+# Copy this file to local_settings.yaml and replace placeholders.
+
+app:
+  name: Sage v5
+  environment: dev
+
+models:
+  active_lane: sage_local
+  sage_local:
+    endpoint: http://127.0.0.1:11434
+    model_name: qwen2.5:3b
+  gemma:
+    endpoint: http://127.0.0.1:11434
+    model_name: YOUR_GEMMA_MODEL_NAME_HERE
+
+voice:
+  provider: kokoro
+  sidecar_url: http://127.0.0.1:5003
+  default_voice: af_sky
+  allowed_voices:
+    - af_sky
+    - bm_george
+
+research:
+  enabled: true
+  max_results: 8
+  report_path: data/research/RESEARCH_REPORT.md
+  status_path: data/research/research_status.json
+
+paths:
+  data_dir: data
+  ocr_inbox_dir: data/ocr_inbox
+  notes_dir: data/notes
+  ocr_models_dir: models/ocr
+
+engine_health:
+  host: 127.0.0.1
+  port: 11434
+
+placeholders:
+  fill_me:
+    - YOUR_GEMMA_MODEL_NAME_HERE

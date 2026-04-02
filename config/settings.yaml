@@ -1,0 +1,8 @@
+# Sage v5 first-run settings
+# generated_at: 2026-03-28T22:08:06Z
+
+llama_server:
+  url: http://127.0.0.1:11434
+
+paths:
+  notes_dir: data/notes
