@@ -1,0 +1,17 @@
+# Python cache and virtual env
+__pycache__/
+*.py[cod]
+.venv/
+
+# Local model binaries
+*.gguf
+
+# Runtime data folders (keep folder placeholders only)
+data/notes/**
+!data/notes/.gitkeep
+
+data/ocr_inbox/**
+!data/ocr_inbox/.gitkeep
+
+data/memory/**
+!data/memory/.gitkeep
