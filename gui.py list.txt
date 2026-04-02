@@ -1,0 +1,56 @@
+file:///C:/Users/milan/.vscode/extensions/ms-python.vscode-pylance-2026.2.1/dist/typeshed-fallback/stubs/tqdm/tqdm/gui.pyi
+file:///C:/Users/milan/.vscode/extensions/ms-python.vscode-pylance-2026.2.1/dist/typeshed-fallback/stubs/tqdm/tqdm/_tqdm_gui.pyi
+file:///C:/Users/milan/.vscode/extensions/ms-python.vscode-pylance-2026.2.1/dist/typeshed-fallback/stubs/flake8/flake8/style_guide.pyi
+file:///C:/Sage_v5/interface/__pycache__/gui.cpython-314.pyc
+file:///C:/Sage_v5/interface/gui.py
+file:///C:/Sage Lite web/VOICE/qwen3_tts/.venv/Lib/site-packages/llama_index/core/prompts/__pycache__/guidance_utils.cpython-314.pyc
+file:///C:/Sage Lite web/VOICE/qwen3_tts/.venv/Lib/site-packages/llama_index/core/evaluation/__pycache__/guideline.cpython-314.pyc
+file:///C:/Sage Lite web/VOICE/qwen3_tts/.venv/Lib/site-packages/llama_index/core/prompts/guidance_utils.py
+file:///C:/Sage Lite web/VOICE/qwen3_tts/.venv/Lib/site-packages/llama_index/core/evaluation/guideline.py
+file:///C:/Sage Lite web/.venv/Lib/site-packages/llama_index/core/prompts/__pycache__/guidance_utils.cpython-313.pyc
+file:///C:/Sage Lite web/.venv/Lib/site-packages/llama_index/core/evaluation/__pycache__/guideline.cpython-313.pyc
+file:///C:/Sage Lite web/.venv/Lib/site-packages/llama_index/core/prompts/guidance_utils.py
+file:///C:/Sage Lite web/.venv/Lib/site-packages/llama_index/core/evaluation/guideline.py
+file:///C:/Sage Lite web/.venv/Lib/site-packages/tqdm/__pycache__/gui.cpython-313.pyc
+file:///C:/Sage Lite web/.venv/Lib/site-packages/tqdm/__pycache__/_tqdm_gui.cpython-313.pyc
+file:///C:/Sage Lite web/.venv/Lib/site-packages/tqdm/gui.py
+file:///C:/Sage Lite web/.venv/Lib/site-packages/tqdm/_tqdm_gui.py
+file:///C:/Sage Lite web/.venv/Lib/site-packages/fsspec/__pycache__/gui.cpython-313.pyc
+file:///C:/Sage Lite web/.venv/Lib/site-packages/fsspec/gui.py
+file:///C:/Sage Lite web/VOICE/qwen3_tts/.venv/Lib/site-packages/pythonwin/pywin/Demos/__pycache__/guidemo.cpython-314.pyc
+file:///C:/Sage Lite web/VOICE/qwen3_tts/.venv/Lib/site-packages/pythonwin/pywin/Demos/guidemo.py
+file:///C:/Users/milan/.conda/envs/bitnet-cpp/Lib/site-packages/tqdm/__pycache__/gui.cpython-310.pyc
+file:///C:/Users/milan/.conda/envs/bitnet-cpp/Lib/site-packages/tqdm/__pycache__/_tqdm_gui.cpython-310.pyc
+file:///C:/Users/milan/.conda/envs/bitnet-cpp/Lib/site-packages/tqdm/gui.py
+file:///C:/Users/milan/.conda/envs/bitnet-cpp/Lib/site-packages/tqdm/_tqdm_gui.py
+file:///C:/Users/milan/.conda/envs/bitnet-cpp/Lib/site-packages/fsspec/__pycache__/gui.cpython-310.pyc
+file:///C:/Users/milan/.conda/envs/bitnet-cpp/Lib/site-packages/fsspec/gui.py
+file:///C:/Sage Lite web/VOICE/qwen3_tts/.venv/Lib/site-packages/tqdm/__pycache__/gui.cpython-314.pyc
+file:///C:/Sage Lite web/VOICE/qwen3_tts/.venv/Lib/site-packages/tqdm/__pycache__/_tqdm_gui.cpython-314.pyc
+file:///C:/Sage Lite web/VOICE/qwen3_tts/.venv/Lib/site-packages/tqdm/gui.py
+file:///C:/Sage Lite web/VOICE/qwen3_tts/.venv/Lib/site-packages/tqdm/_tqdm_gui.py
+file:///C:/Sage Lite web/VOICE/qwen3_tts/.venv/Lib/site-packages/fsspec/__pycache__/gui.cpython-314.pyc
+file:///C:/Sage Lite web/VOICE/qwen3_tts/.venv/Lib/site-packages/fsspec/gui.py
+file:///C:/Sage Lite web/VOICE/faster_whisper/.venv/Lib/site-packages/tqdm/__pycache__/gui.cpython-314.pyc
+file:///C:/Users/milan/.vscode/extensions/ms-python.vscode-pylance-2026.1.1/dist/typeshed-fallback/stubs/tqdm/tqdm/gui.pyi
+file:///C:/Users/milan/.vscode/extensions/ms-python.vscode-pylance-2026.1.1/dist/typeshed-fallback/stubs/tqdm/tqdm/_tqdm_gui.pyi
+file:///C:/Users/milan/.vscode/extensions/ms-python.vscode-pylance-2026.1.1/dist/typeshed-fallback/stubs/flake8/flake8/style_guide.pyi
+file:///C:/Sage Lite web/VOICE/faster_whisper/.venv/Lib/site-packages/tqdm/__pycache__/_tqdm_gui.cpython-314.pyc
+file:///C:/Sage Lite web/VOICE/faster_whisper/.venv/Lib/site-packages/tqdm/_tqdm_gui.py
+file:///C:/Sage Lite web/VOICE/faster_whisper/.venv/Lib/site-packages/fsspec/__pycache__/gui.cpython-314.pyc
+file:///C:/Sage Lite web/VOICE/faster_whisper/.venv/Lib/site-packages/fsspec/gui.py
+file:///C:/Sage Lite web/VOICE/faster_whisper/.venv/Lib/site-packages/tqdm/gui.py
+file:///C:/ProgramData/anaconda3/Lib/site-packages/spyder/config/__pycache__/gui.cpython-313.pyc
+file:///C:/ProgramData/anaconda3/Lib/site-packages/spyder/config/gui.py
+file:///C:/ProgramData/anaconda3/Lib/site-packages/tqdm/__pycache__/_tqdm_gui.cpython-313.pyc
+file:///C:/ProgramData/anaconda3/Lib/site-packages/tqdm/__pycache__/gui.cpython-313.pyc
+file:///C:/ProgramData/anaconda3/Lib/site-packages/tqdm/gui.py
+file:///C:/ProgramData/anaconda3/Lib/site-packages/tqdm/_tqdm_gui.py
+file:///C:/ProgramData/anaconda3/Lib/site-packages/IPython/lib/__pycache__/guisupport.cpython-313.pyc
+file:///C:/ProgramData/anaconda3/Lib/site-packages/IPython/lib/guisupport.py
+file:///C:/ProgramData/anaconda3/Lib/site-packages/fsspec/__pycache__/gui.cpython-313.pyc
+file:///C:/ProgramData/anaconda3/Lib/site-packages/fsspec/gui.py
+file:///C:/ProgramData/anaconda3/Lib/site-packages/pythonwin/pywin/Demos/__pycache__/guidemo.cpython-313.pyc
+file:///C:/ProgramData/anaconda3/Lib/site-packages/pythonwin/pywin/Demos/guidemo.py
+file:///C:/ProgramData/anaconda3/Lib/site-packages/intake/interface/__pycache__/gui.cpython-313.pyc
+file:///C:/ProgramData/anaconda3/Lib/site-packages/intake/catalog/__pycache__/gui.cpython-313.pyc

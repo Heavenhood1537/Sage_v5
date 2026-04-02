@@ -1,0 +1,242 @@
+-:-
+
+TEST EXAMPLES FOR SAGE LITE:
+
+admin
+
+Remind me to call the clinic tomorrow at 11:00 hours.
+
+chat
+
+Remind me to check the mail at 20:00 hours.
+
+Chat
+
+Remind me to move the heavy boxes in the garage tomorrow afternoon.
+
+chat
+
+note tag test check the blood pressure at 15:00 hours.
+
+chat
+
+Remind me to call the pharmacy."
+
+chat
+
+identify your new hardware
+
+chat
+
+note tag test I need to check the CIBC bank on Monday morning for the project, and also buy some flowers"
+
+chat
+
+Tell me me pros and cons of coding locally run AI model personal assistant, project?
+
+chat
+
+Why is the equation 'e to the i pi plus one equals zero' considered the most beautiful equation in math?
+
+chat
+
+Translate to Chinese 'what is the estimated population of China'
+
+chat
+
+Tell me pros and cons of moving our household budget from a paper ledger to a dedicated software app, and give me a step-by-step plan?
+
+chat
+
+Tell me few interesting facts about China?
+
+chat
+
+Tell me few interesting facts about Cuba?
+
+chat
+
+What is the square root of 81?
+
+chat
+
+give me a detailed 3-day itinerary for a photography trip to Jasper.
+
+chat
+
+Tell me few interesting facts about Russia?
+
+chat
+
+Sage, summarize our current location and the three biggest technical upgrades we've made today.
+
+chat
+
+Tell me some facts about Shahdag Mountain.
+
+admin
+
+Remind me tomorrow at 16:00 hours test the reminder's bell.
+
+chat
+
+Note tag test, I should fill out the tax forms on Tuesday.
+
+chat
+
+tell me, what do you think, about me having a quick trip to the moon.
+
+chat
+
+Tell me what kind of jacket should I take to the camping trip?
+
+chat
+
+Calculate 2.5 + 2.5 + 2.5 + 2.5 - 0.5 =    (9.5)
+
+chat
+
+calculate 12 * 13 + 5 =     (161)
+
+chat
+
+calculate sqaure root of 144 + 4 =     (16)
+
+chat
+
+tell me about the geography of Manitoba, Canada.
+
+chat
+
+tell me about the Alberta, Canada.
+
+chat
+
+ Tell me about the life of hummingbirds.
+
+chat
+
+tell me about the annual snowfall in Glacier National Park.
+
+chat
+
+Tell me a few interesting facts about Tsawwassen, BC.
+
+chat
+
+translate to <  > 'this lamb rack is delicious.'
+
+chat
+
+research: compare linux kernel eBPF sidecar patterns for observability vs service mesh sidecars.
+
+research: best practices for ACID-safe local-first reminder systems with sqlite and background workers.
+
+research: practical tradeoffs between foundry-hosted bitnet and cloud qwen for household assistant reasoning.
+
+research: secure local API gateway design for home LAN AI services with token auth and rate limits.
+
+research-status then research-read to confirm the model label and output quality.
+
+chat
+
+Tell me few interesting facts about Delta, BC, Cabada?
+
+chat
+
+what is tomorrow's weather for Delta, BC.
+
+chat
+
+what is the estimated population of Vancouver, Canada.
+
+chat
+
+tell me few interesting facts about national parks of BC Canada.
+
+chat
+
+Who invented alternating current, and when?
+
+chat
+
+What are the oldest known beer recipes?
+
+chat
+
+tell me few interesting facts about France.
+
+chat
+
+what are the oldest known homo species made tools?
+
+chat
+
+What is the oldest known human settlement?
+
+chat
+
+Calculate 2.5 + 2.5 + 2.5 - 0.5 =   (7)
+
+chat
+
+Calculate 12*13 +5 =  (161)
+
+chat
+
+Calculate square root of 144 equalls  (12)
+
+
+chat
+
+Who built and who financed the first hydro electric plant in Telluride, USA?
+
+chat
+
+would it be possible to combine linux's kernel sidecared by AI model that then both control/run the gnu?
+
+chat
+
+qwen could you suggest any idea of a new people helping project, that I could do on a computer in my spare ttime, and it could help people?
+
+chat
+
+remind 2026-02-27 at 20:05 to test the reminder.
+
+chat
+
+Note tag test fill out our tax forms for this year.
+
+chat
+
+Remind me tomorrow at 08:00 hours to go to the TD Bank.
+
+chat
+
+Tell me who do I help take care of?
+
+chat
+
+Remind me tomorrow at 08:00 o'clock call my brother.
+
+chat
+
+Remind me next Monday at 10:00 hours to send the report.
+
+chat
+
+what are the pros and cons of coding locally run model, personal assistant project?
+
+chat
+
+what are the pros and cons of moving our household budget from a paper ledger to a dedicated software app, and give me a step-by-step plan?
+
+chat
+
+note tag test I need to check the CIBC bank on Monday morning for the project and also buy some flowers."
+
+-:-
+
+qwen I am thinking of a new positive, people helping project idea, that could be done on a PC, you and me, in our free time, don't need to be something epic, do you have some ideas, just a short description please with any you might come up with. Those could be helping bring better future for next generations, some small research project that would require only pc, you me, and our time and good will, from smallest to the 'not too grandiose'.
+
+-:-
