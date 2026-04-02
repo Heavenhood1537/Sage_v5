@@ -28,6 +28,8 @@ convo-memory.txt
 # Oversized local binaries (GitHub 100MB hard limit)
 models/Voice/kokoro/kokoro-v1.0.onnx
 tools/*.zip
+tools/llama-prism-win-cuda-12.4/
+tools/llama-prism-win-cuda-13.1/
 tools/llama-prism-win-cuda-12.4/cublasLt64_12.dll
 tools/llama-prism-win-cuda-12.4/ggml-cuda.dll
 tools/llama-prism-win-cuda-13.1/cublasLt64_13.dll
