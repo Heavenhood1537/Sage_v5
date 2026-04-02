@@ -1060,6 +1060,11 @@ class SageDesktopGUI(ctk.CTk):
             return ""
 
         value = raw.replace("\r", " ").replace("\n", " ")
+        value = value.replace("\u2019", "'").replace("\u2018", "'")
+
+        # Some TTS voices pronounce proper-name possessives as "es".
+        # Convert Name's -> Names for cleaner pronunciation (for example Castro's).
+        value = re.sub(r"\b([A-Z][a-z]+)'s\b", r"\1s", value)
 
         # Read numeric ranges naturally (for example 15-30 mph -> 15 to 30 mph)
         # while keeping arithmetic phrases like "12 - 5" as subtraction.
