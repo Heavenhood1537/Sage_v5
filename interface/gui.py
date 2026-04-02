@@ -946,106 +946,14 @@ class SageDesktopGUI(ctk.CTk):
             except Exception:
                 pass
 
-    def _sage_cpu_cap_percent(self) -> int:
-        raw = os.environ.get("SAGE5_SAGE_CPU_CAP_PERCENT", "45")
-        try:
-            value = int(str(raw).strip())
-        except Exception:
-            value = 45
-        return max(10, min(100, value))
-
-    def _sage_cpu_cap_threads(self) -> int:
-        logical_cpus = int(os.cpu_count() or 4)
-        cap_pct = self._sage_cpu_cap_percent() / 100.0
-        return max(1, int(logical_cpus * cap_pct))
-
     def _start_ollama_background(self) -> bool:
-        """Launch local engine in detached mode without opening extra terminal windows."""
-        if not self.llm._prefer_openai_for_local(self.cfg.models.endpoints.sage_local):
-            # Ollama-backed local lane does not require launching an external GGUF server.
-            return True
-
-        if self._ollama_proc is not None and self._ollama_proc.poll() is None:
-            return True
-
-        engine_candidates = [
-            Path(os.environ.get("SAGE5_ENGINE_DIR", "")).expanduser(),
-            self.project_root / "tools" / "llama-prism-win-cuda-13.1",
-            Path("C:/llama.cpp/build/bin/Release"),
-            self.project_root / "llama.cpp" / "build" / "bin" / "Release",
-        ]
-        engine_dir = next((p for p in engine_candidates if str(p).strip() and (p / "llama-server.exe").exists()), Path(""))
-        engine_exe = engine_dir / "llama-server.exe"
-
-        model_candidates = sorted((self.project_root / "models" / "llm").glob("*.gguf"))
-        model_path = next((p for p in model_candidates if p.exists()), None)
-
-        if not engine_exe.exists():
-            self._log_ollama_event(f"Restart skipped: engine missing at {engine_exe.as_posix()}")
-            return False
-        if model_path is None or not model_path.exists():
-            self._log_ollama_event("Restart skipped: no GGUF model file found in models/llm")
-            return False
-
-        # Rate-limit restarts to avoid thrashing if engine repeatedly fails.
-        now = time.time()
-        if now - self._last_ollama_restart_ts < 5.0:
-            self._log_ollama_event("Restart skipped: cooldown active")
-            return False
-
-        self._last_ollama_restart_ts = now
-        try:
-            self._log_ollama_event(
-                f"Restart attempt: launching llama-server with {model_path.name}",
-                include_chat=True,
-            )
-            flags = 0
-            if os.name == "nt":
-                flags |= getattr(subprocess, "CREATE_NO_WINDOW", 0)
-                flags |= getattr(subprocess, "DETACHED_PROCESS", 0)
-
-            cmd = [
-                str(engine_exe),
-                "-m",
-                str(model_path),
-                "--port",
-                "8080",
-                "--threads",
-                str(self._sage_cpu_cap_threads()),
-                "--threads-batch",
-                str(self._sage_cpu_cap_threads()),
-            ]
-
-            self._ollama_proc = subprocess.Popen(
-                cmd,
-                cwd=str(engine_dir),
-                stdout=subprocess.DEVNULL,
-                stderr=subprocess.DEVNULL,
-                creationflags=flags,
-            )
-            return True
-        except Exception as exc:
-            self._ollama_proc = None
-            self._log_ollama_event(f"Restart launch failed: {exc}", include_chat=True)
-            return False
+        """External GGUF server launch is disabled; Sage v5 uses Ollama directly."""
+        return False
 
     def _ensure_ollama_online(self, timeout_sec: float = 18.0) -> bool:
         """Best-effort guard to keep local engine available for local lane requests."""
-        if not self.llm._prefer_openai_for_local(self.cfg.models.endpoints.sage_local):
-            # Ollama-backed local lane: only verify endpoint reachability.
-            return self._is_ollama_alive()
-
         if self._is_ollama_alive():
             return True
-
-        with self._ollama_restart_lock:
-            if self._is_ollama_alive():
-                return True
-            started = self._start_ollama_background()
-
-        if not started and not self._is_ollama_alive():
-            self._log_ollama_event("Engine unavailable and restart did not start", include_chat=True)
-            return False
 
         deadline = time.time() + max(1.0, float(timeout_sec))
         while time.time() < deadline:
@@ -1075,16 +983,14 @@ class SageDesktopGUI(ctk.CTk):
             self._watchdog_consecutive_misses = 0
         else:
             self._watchdog_consecutive_misses += 1
-            # Only log and attempt recovery after 3 consecutive misses to avoid
+            # Only log after 3 consecutive misses to avoid
             # false positives from brief momentary disconnects during tab switches.
             if self._watchdog_consecutive_misses >= 3:
-                with self._ollama_restart_lock:
-                    if not self._is_ollama_alive():
-                        self._log_ollama_event(
-                            f"Watchdog: engine down for {self._watchdog_consecutive_misses} checks — attempting restart",
-                            include_chat=True,
-                        )
-                        _ = self._start_ollama_background()
+                if not self._is_ollama_alive():
+                    self._log_ollama_event(
+                        f"Watchdog: engine down for {self._watchdog_consecutive_misses} checks.",
+                        include_chat=True,
+                    )
                 self._watchdog_consecutive_misses = 0
 
         self.after(10000, self._ollama_watchdog_tick)
